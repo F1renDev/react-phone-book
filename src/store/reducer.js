@@ -8,8 +8,8 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.INPUT_SEARCHFIELD_CHANGE:
       return {
-          ...state,
-          searchField: action.nextLetter
+        ...state,
+        searchField: action.nextLetter
       };
     default: {
       return state;

@@ -7,10 +7,10 @@ const initialState = {
 const reducer = (state = initialState, action) => {
   switch (action.type) {
     case actionTypes.USERS_DID_FETCH:
-      return{
-          ...state,
-          monsters: action.users
-      }
+      return {
+        ...state,
+        monsters: action.users
+      };
 
     default: {
       return state;
